@@ -6,7 +6,7 @@ package Dist::Zilla::Plugin::CheckForUnwantedFiles;
 
 # ABSTRACT: Check for unwanted files
 # AUTHORITY
-our $VERSION = '0.0100';
+our $VERSION = '0.0101';
 
 use Moose;
 use namespace::autoclean;
