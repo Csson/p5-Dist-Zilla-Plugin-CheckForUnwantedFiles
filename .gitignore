@@ -1,8 +1,12 @@
-/Dist-Zilla-Plugin-CheckForUnwantedFiles-*
+# This file was auto-generated from iller.yaml by Dist::Iller on 2020-12-29 17:13:10 UTC.
+# The following configs were used:
+# * Dist::Iller::Config::Author::CSSON: 0.0328
+
 /.build
 /_build*
 /Build
 MYMETA.*
 !META.json
 /.prove
+/Dist-Zilla-Plugin-CheckForUnwantedFiles-*
 .coverhistory.json
