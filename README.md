@@ -28,14 +28,15 @@ This plugin checks the development directory (not the build directory) for unwan
 want to have the previous provider's configuration files lingering around **and** you are too forgetful to remember to check for them
 when doing a new release after the switch.
 
-In other words:
+It is run at the `AfterBuild` stage, and takes one (repeatable) argument: `unwanted_file`. It is a fatal error if any unwanted file is found.
+And, despite its name, it works just as well with unwanted directories.
+
+So:
 
 1. Remove the plugin that generates the file from the bundle
 2. Add this plugin to the bundle
 3. Add the path to the file gets generated as an `unwanted_file`
-
-It is run at the `AfterBuild` stage, and takes one (repeatable) argument: `unwanted_file`. It is a fatal error if any unwanted file is found.
-And, despite its name, it works just as well with unwanted directories.
+4. You must delete the unwanted file before the distribution can be built
 
 # SOURCE
 
