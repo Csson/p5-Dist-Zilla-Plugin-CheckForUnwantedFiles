@@ -18,7 +18,12 @@ header:
 prereqs:
   runtime:
     requires:
-      - perl: 5.010000
+      - perl: 5.014000
+      - Moose
+      - namespace::autoclean
+      - Path::Tiny
+      - Types::Standard
+      - Dist::Zilla::Role::AfterBuild
 
 plugins:
   - +config: Author::CSSON
